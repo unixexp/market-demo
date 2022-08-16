@@ -10,15 +10,11 @@ body {
     font-weight: $fontWeight;
 }
 
-.header {
-    &__inner {
-        margin: 20px 20px;
-        text-align: center;
-    }
-
-    &__title {
-        font-size: 48px;
-    }
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .link {
