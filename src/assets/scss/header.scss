@@ -1,3 +1,11 @@
 .header {
-    
+    background-color: #f4f4f4;
+
+    &__logo {
+        margin: 15px 0;
+    }
+
+    &__logo-img {
+        height: 127px;
+    }
 }
