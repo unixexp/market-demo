@@ -1,11 +1,70 @@
+@import "./vars.scss";
+
 .header {
+
     background-color: #f4f4f4;
 
-    &__logo {
-        margin: 15px 0;
+    &__search {
+        min-width: 400px;
+        padding-left: 15px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-end;
+        padding: 15px 0;
     }
 
     &__logo-img {
         height: 127px;
     }
+
 }
+
+.search {
+
+    position: relative;
+
+    &__field {
+        width: 100%;
+        font-size: 16px;
+        border-radius: 40px;
+        box-shadow: 2px 2px 2px rgb(0 0 0 / 15%);
+        height: 42px;
+        padding: 16px 16px;
+        color: $textColor;
+
+        &::placeholder {
+            color: $textColorLight;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        border-radius: 50%;
+        background-color: $secondaryColor;
+        transition: background-color .2s ease;
+
+        &:hover {
+            background-color: $secondaryColorActive;
+        }
+    }
+
+    &__img {
+        width: 24px;
+        height: 24px;
+        fill: $backgroundColor;
+    }
+}
+
+
+
+
+
+

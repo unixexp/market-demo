@@ -8,6 +8,12 @@
 	box-sizing: border-box;
 }
 
+input {
+	appearance: none;
+    outline: 0;
+    border: none;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-size: inherit;
 }

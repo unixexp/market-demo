@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: $mainColor;
+    background-color: $backgroundColor;
     color: $textColor;
     font-family: $fontFamily;
     font-weight: $fontWeight;
@@ -27,11 +27,10 @@ body {
 }
 
 .link {
-    color: $linkColor;
     font-size: 24px;
     display: inline-block;
     &:hover {
-        color: $linkColorHovered;
+        
     }
 }
 
