@@ -4,11 +4,6 @@
 
     background-color: #f4f4f4;
 
-    &__search {
-        min-width: 400px;
-        padding-left: 15px;
-    }
-
     &__content {
         display: flex;
         justify-content: space-between;
@@ -18,6 +13,16 @@
 
     &__logo-img {
         height: 127px;
+    }
+
+    &__search {
+        min-width: 400px;
+        padding-left: 15px;
+    }
+
+    &__phones {
+        min-width: 175.45px;
+        padding-left: 15px;
     }
 
 }
@@ -63,6 +68,39 @@
     }
 }
 
+.phone-list {
+
+    position: relative;
+    display: flex;
+    align-items: self-end;
+    height: 24px;
+
+    &__img-wrapper {
+        height: 24px;
+        padding-right: 8px;
+    }
+
+    &__img {
+        width: 24px;
+        fill: $secondaryColor;
+    }
+
+    &__current {
+        color: $primaryColor;
+        font-weight: 700;
+    }
+
+    &__arrow {
+        margin-bottom: -2px;
+        width: 24px;
+        fill: $secondaryColor;
+    }
+
+    &__list {
+        display: none;
+    }
+
+}
 
 
 
