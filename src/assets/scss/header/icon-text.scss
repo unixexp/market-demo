@@ -1,0 +1,27 @@
+.icon-text {
+    display: flex;
+    align-items: self-end;
+
+    &__img {
+        width: 24px;
+        fill: $primaryColor;
+        transition: fill .2s ease-in-out;
+    }
+
+    &__text {
+        transition: color .2s ease-in-out;
+    }
+
+    &:hover &__text {
+        color: $secondaryColor;
+    }
+
+    &:hover &__img {
+        fill: $secondaryColor;
+    }
+
+    &__img-wrapper {
+        height: 24px;
+        padding-right: 8px;
+    }
+}

@@ -1,0 +1,38 @@
+@import "../vars.scss";
+@import "./search.scss";
+@import "./phone-list.scss";
+@import "./icon-text.scss";
+@import "./tools.scss";
+
+.header {
+
+    background-color: $panelColor;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-end;
+        padding: 15px 0;
+    }
+
+    &__logo-img {
+        height: 127px;
+    }
+
+    &__search {
+        min-width: 400px;
+        padding-left: 15px;
+    }
+
+    &__phones {
+        min-width: 175.45px;
+        padding-left: 15px;
+    }
+
+    &__tools {
+        padding-left: 15px;
+    }
+
+}
+
+

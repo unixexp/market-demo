@@ -1,0 +1,23 @@
+.tools {
+    display: grid;
+    grid-template-areas:
+        'account lang'
+        'favorites cart';
+    gap: 15px;
+
+    .__account {
+        grid-area: account;
+    }
+
+    .__lang {
+        grid-area: lang;
+    }
+
+    .__favorites {
+        grid-area: favorites;
+    }
+
+    .__cart {
+        grid-area: cart;
+    }
+}
