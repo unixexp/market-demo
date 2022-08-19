@@ -1,0 +1,48 @@
+@media (max-width: 1200px) {
+    
+	.phone-list {
+		margin-bottom: 0;
+
+		&__arrow {
+        	display: none;
+    	}
+
+    	&__phone--current {
+        	display: none;
+    	}
+
+    	&__img-wrapper {
+    		padding-right: 30px;
+    		height: 42px;
+    	}
+
+    	&__img {
+    		width: 42px;
+    	}
+
+    	&__list {
+    		min-width: 142px;
+    		left: 0;
+    	}
+
+    	&__list-item:first-child {
+        	display: block;
+    	}
+	}
+
+	.header {
+			&__phones {
+			min-width: 0;
+		}
+
+		&__search {
+        	width: 100%;
+        	padding-left: 15px;
+    	}
+	}
+
+}
+
+@media (max-width: 1040px) {
+
+}

@@ -25,7 +25,7 @@
         top: 0;
         border-radius: 50%;
         background-color: $secondaryColor;
-        transition: background-color .2s ease-in-out;
+        transition: background-color .2s ease;
 
         &:hover {
             background-color: $secondaryColorActive;
@@ -35,6 +35,6 @@
     &__img {
         width: 24px;
         height: 24px;
-        fill: $backgroundColor;
+        fill: $iconColor;
     }
 }
