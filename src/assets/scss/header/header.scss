@@ -16,6 +16,19 @@
         padding: 15px 0;
     }
 
+    &__left-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-end;
+        width: 100%;
+    }
+
+    &__right-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: self-end;
+    }
+
     &__logo-img {
         height: 127px;
     }
@@ -26,7 +39,7 @@
     }
 
     &__phones {
-        min-width: 175.45px;
+        min-width: 200px;
         padding-left: 15px;
     }
 

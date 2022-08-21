@@ -11,37 +11,41 @@
             <header class="header">
                 <div class="container">
                     <div class="header__content">
+                        <div class="header__left-block">
+                            <div class="header__logo">
+                                <a class="header__logo-link" href="/">
+                                    <img class="header__logo-img" src="assets/img/logo.svg", alt="logo"/>
+                                </a>
+                            </div>
 
-                        <div class="header__logo">
-                            <a class="header__logo-link" href="/">
-                                <img class="header__logo-img" src="assets/img/logo.svg", alt="logo"/>
-                            </a>
-                        </div>
-
-                        <div class="header__search">
-                            <div class="search">
-                                <input type="text" name="search" value placeholder="Поиск"
-                                    class="search__field" livesearch="off" minlength="3">
-                                <button class="search__btn">
-                                    <svg class="search__img" viewBox="0 0 32 32">
-                                        <use xlink:href="assets/img/sprites.svg#search"></use>
-                                    </svg>
-                                </button>
+                            <div class="header__search">
+                                <div class="search">
+                                    <input type="text" name="search" value placeholder="Поиск"
+                                        class="search__field" livesearch="off" minlength="3">
+                                    <button class="search__btn">
+                                        <svg class="search__img" viewBox="0 0 32 32">
+                                            <use xlink:href="assets/img/sprites.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="header__phones">
-                            <div class="phone-list">
-                                <div class="phone-list__img-wrapper">
-                                    <svg class="phone-list__img" viewBox="0 0 32 32">
-                                        <use xlink:href="assets/img/sprites.svg#phone"></use>
-                                    </svg>
-                                </div>
-                                <!--
-                                <div class="phone-list__phone-wrapper">
+                        <div class="header__right-block">
+                            <div class="header__phones">
+                                <div class="phone-list">
+                                    <div class="phone-list__img-wrapper">
+                                        <svg class="phone-list__img" viewBox="0 0 32 32">
+                                            <use xlink:href="assets/img/sprites.svg#phone"></use>
+                                        </svg>
+                                    </div>
+
                                     <a href="tel:+380121231313" class="phone-list__phone phone-list__phone--current">(012) 123-13-13</a>
 
                                     <ul class="phone-list__list">
+                                        <li class="phone-list__list-item">
+                                            <a href="tel:+380121231313" class="phone-list__phone">(012) 123-13-13</a>
+                                        </li>
                                         <li class="phone-list__list-item">
                                             <a href="tel:+380121241414" class="phone-list__phone">(012) 124-14-14</a>
                                         </li>
@@ -49,84 +53,70 @@
                                             <a href="tel:+380121251515" class="phone-list__phone">(012) 125-15-15</a>
                                         </li>
                                     </ul>
+
+                                    <svg class="phone-list__arrow" viewBox="0 0 32 32">
+                                        <use xlink:href="assets/img/sprites.svg#arrow-down"></use>
+                                    </svg>
                                 </div>
-                                -->
-                                <a href="tel:+380121231313" class="phone-list__phone phone-list__phone--current">(012) 123-13-13</a>
-
-                                <ul class="phone-list__list">
-                                    <li class="phone-list__list-item">
-                                        <a href="tel:+380121231313" class="phone-list__phone">(012) 123-13-13</a>
-                                    </li>
-                                    <li class="phone-list__list-item">
-                                        <a href="tel:+380121241414" class="phone-list__phone">(012) 124-14-14</a>
-                                    </li>
-                                    <li class="phone-list__list-item">
-                                        <a href="tel:+380121251515" class="phone-list__phone">(012) 125-15-15</a>
-                                    </li>
-                                </ul>
-
-                                <svg class="phone-list__arrow" viewBox="0 0 32 32">
-                                    <use xlink:href="assets/img/sprites.svg#arrow-down"></use>
-                                </svg>
                             </div>
-                        </div>
 
-                        <div class="header__tools">
-                            <div class="tools">
-                                <div class="tools__account">
-                                    <a href="/accounts">
-                                        <div class="icon-text">
-                                            <div class="icon-text__img-wrapper">
-                                                <svg class="icon-text__img" viewBox="0 0 32 32">
-                                                    <use xlink:href="assets/img/sprites.svg#account"></use>
-                                                </svg>
+                            <div class="header__tools">
+                                <div class="tools">
+                                    <div class="tools__account">
+                                        <a href="/accounts">
+                                            <div class="icon-text">
+                                                <div class="icon-text__img-wrapper">
+                                                    <svg class="icon-text__img" viewBox="0 0 32 32">
+                                                        <use xlink:href="assets/img/sprites.svg#account"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="icon-text__text">Войти</span>
                                             </div>
-                                            <span class="icon-text__text">Войти</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                                <div class="tools__lang">
-                                    <a href="/lang">
-                                        <div class="icon-text">
-                                            <div class="icon-text__img-wrapper">
-                                                <svg class="icon-text__img" viewBox="0 0 32 32">
-                                                    <use xlink:href="assets/img/sprites.svg#earth"></use>
-                                                </svg>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="tools__lang">
+                                        <a href="/lang">
+                                            <div class="icon-text">
+                                                <div class="icon-text__img-wrapper">
+                                                    <svg class="icon-text__img" viewBox="0 0 32 32">
+                                                        <use xlink:href="assets/img/sprites.svg#earth"></use>
+                                                    </svg>
+                                                </div>
+                                                <span class="icon-text__text">Укр</span>
                                             </div>
-                                            <span class="icon-text__text">Укр</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                                <div class="tools__favorites">
-                                    <a href="/favorites">
-                                        <div class="icon-text">
-                                            <div class="icon-text__img-wrapper">
-                                                <svg class="icon-text__img" viewBox="0 0 32 32">
-                                                    <use xlink:href="assets/img/sprites.svg#heart"></use>
-                                                </svg>
-                                                <span class="icon-text__counter">12</span>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="tools__favorites">
+                                        <a href="/favorites">
+                                            <div class="icon-text">
+                                                <div class="icon-text__img-wrapper">
+                                                    <svg class="icon-text__img" viewBox="0 0 32 32">
+                                                        <use xlink:href="assets/img/sprites.svg#heart"></use>
+                                                    </svg>
+                                                    <span class="icon-text__counter">12</span>
+                                                </div>
+                                                <span class="icon-text__text">Избранное</span>
                                             </div>
-                                            <span class="icon-text__text">Избранное</span>
-                                        </div>
-                                    </a>
-                                </div>
+                                        </a>
+                                    </div>
 
-                                <div class="tools__cart">
-                                    <a href="/cart">
-                                        <div class="icon-text">
-                                            <div class="icon-text__img-wrapper">
-                                                <svg class="icon-text__img" viewBox="0 0 32 32">
-                                                    <use xlink:href="assets/img/sprites.svg#cart"></use>
-                                                </svg>
-                                                <span class="icon-text__counter">1</span>
+                                    <div class="tools__cart">
+                                        <a href="/cart">
+                                            <div class="icon-text">
+                                                <div class="icon-text__img-wrapper">
+                                                    <svg class="icon-text__img" viewBox="0 0 32 32">
+                                                        <use xlink:href="assets/img/sprites.svg#cart"></use>
+                                                    </svg>
+                                                    <span class="icon-text__counter">1</span>
+                                                </div>
+                                                <span class="icon-text__text">Корзина</span>
                                             </div>
-                                            <span class="icon-text__text">Корзина</span>
-                                        </div>
-                                    </a>
-                                </div>
+                                        </a>
+                                    </div>
 
+                                </div>
                             </div>
                         </div>
 
