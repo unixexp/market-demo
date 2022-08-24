@@ -1,16 +1,16 @@
-.slider {
+.news-slider {
     overflow: hidden;
     width: 100%;
 
-    &__track {
+    .slider__track {
         width: 5000px;
         background-color: blue;
         transform: translate3d(0px, 0px, 0px);
     }
 
-    &__item {
+    .slider__item {
         display: inline-block;
-        width: 260px;
+        width: 258px;
         margin: 0 10px;
     }
 }

@@ -1,3 +1,5 @@
+@import "./slider.scss";
+
 .news {
 
     padding: 40px 25px;
@@ -36,9 +38,11 @@
 }
 
 .new-card {
+    /*
     &__img {
         height: 162px;
     }
+    */
 
     &__img img {
         width: 100%;
