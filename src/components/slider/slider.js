@@ -43,7 +43,7 @@ export default function Slider(sliderWrapperClassName) {
 				this.state.position = this.POSITION_MIDDLE;
 			}
 
-			track.style.marginLeft = this.state.offset + ".px";
+			track.style.marginLeft = this.state.offset.toString() + "px";
 		}
 
 		if (this.callback !== null)
@@ -63,7 +63,7 @@ export default function Slider(sliderWrapperClassName) {
 			this.state.position = this.POSITION_MIDDLE;
 		}
 
-		track.style.marginLeft = this.state.offset + ".px";
+		track.style.marginLeft = this.state.offset.toString() + "px";
 
 		if (this.callback !== null)
 			this.callback(this.state);
