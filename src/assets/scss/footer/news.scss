@@ -1,5 +1,3 @@
-@import "./slider.scss";
-
 .news {
 
     padding: 40px 25px;
@@ -9,6 +7,7 @@
     flex-wrap: wrap;
 
     &__title {
+        margin-left: 20px;
         font-size: 24px;
         color: $textColorBright;
     }
@@ -30,19 +29,21 @@
         fill: $iconColor;
     }
 
+    &__arrow-img--clicked {
+        fill: $secondaryColor;
+    }
+
     &__content {
         width: 100%;
-        // background-color: white;
     }
 
 }
 
 .new-card {
-    /*
     &__img {
+        width: 260px;
         height: 162px;
     }
-    */
 
     &__img img {
         width: 100%;

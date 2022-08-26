@@ -70,7 +70,7 @@
                                                         <use xlink:href="assets/img/sprites.svg#account"></use>
                                                     </svg>
                                                 </div>
-                                                <span class="icon-text__text">Войти</span>
+                                                <span class="icon-text__text">Login</span>
                                             </div>
                                         </a>
                                     </div>
@@ -83,7 +83,7 @@
                                                         <use xlink:href="assets/img/sprites.svg#earth"></use>
                                                     </svg>
                                                 </div>
-                                                <span class="icon-text__text">Укр</span>
+                                                <span class="icon-text__text">UK</span>
                                             </div>
                                         </a>
                                     </div>
@@ -97,7 +97,7 @@
                                                     </svg>
                                                     <span class="icon-text__counter">12</span>
                                                 </div>
-                                                <span class="icon-text__text">Избранное</span>
+                                                <span class="icon-text__text">Favorites</span>
                                             </div>
                                         </a>
                                     </div>
@@ -111,7 +111,7 @@
                                                     </svg>
                                                     <span class="icon-text__counter">1</span>
                                                 </div>
-                                                <span class="icon-text__text">Корзина</span>
+                                                <span class="icon-text__text">Cart</span>
                                             </div>
                                         </a>
                                     </div>
@@ -138,15 +138,15 @@
             <footer class="footer">
                 <div class="container">
                     <div class="news">
-                        <div class="news__title">Новости</div>
+                        <div class="news__title">News</div>
                         <div class="news__arrows">
                             <div class="news__arrow-img-wrapper">
-                                <svg class="news__arrow-img" viewBox="0 0 32 32">
+                                <svg class="news__arrow-img news-arrow-left" viewBox="0 0 32 32">
                                     <use xlink:href="assets/img/sprites.svg#arrow-left"></use>
                                 </svg>
                             </div>
                             <div class="news__arrow-img-wrapper">
-                                <svg class="news__arrow-img news__arrow-img--enabled" viewBox="0 0 32 32">
+                                <svg class="news__arrow-img news-arrow-right news__arrow-img--enabled" viewBox="0 0 32 32">
                                     <use xlink:href="assets/img/sprites.svg#arrow-right"></use>
                                 </svg>
                             </div>
@@ -154,89 +154,142 @@
 
                         <div class="news__content">
                             <div class="news-slider">
-                                <div class="slider__track">
-                                    <div class="slider__item">
-                                        <div class="new-card">
-                                            <div class="new-card__img">
-                                                <a href="/">
-                                                    <img src="assets/img/news/new-dummy.png" alt="Some new image">
+                                <div class="slider">
+                                    <div class="slider__track">
+                                        <div class="slider__item">
+                                            <div class="new-card">
+                                                <div class="new-card__img">
+                                                    <a href="/">
+                                                        <img src="assets/img/news/gibson-exclusive-collection.jpg" alt="Guitar">
+                                                    </a>
+                                                </div>
+                                                <a class="new-card__title" href="/">
+                                                    Here should be new title but not very long
                                                 </a>
-                                            </div>
-                                            <a class="new-card__title" href="/">
-                                                Here should be new title but not very long
-                                            </a>
-                                            <div class="new-card__desc">
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                                when an unknown printer took a galley of type and scrambled it
-                                                to make a type specimen book.
+                                                <div class="new-card__desc">
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it
+                                                    to make a type specimen book.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="slider__item">
-                                        <div class="new-card">
-                                            <div class="new-card__img">
-                                                <a href="/">
-                                                    <img src="assets/img/news/new-dummy.png" alt="Some new image">
+                                        <div class="slider__item">
+                                            <div class="new-card">
+                                                <div class="new-card__img">
+                                                    <a href="/">
+                                                        <img src="assets/img/news/amp.jpg" alt="Amp">
+                                                    </a>
+                                                </div>
+                                                <a class="new-card__title" href="/">
+                                                    Here should be new title but not very long
                                                 </a>
-                                            </div>
-                                            <a class="new-card__title" href="/">
-                                                Here should be new title but not very long
-                                            </a>
-                                            <div class="new-card__desc">
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                                when an unknown printer took a galley of type and scrambled it
-                                                to make a type specimen book.
+                                                <div class="new-card__desc">
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it
+                                                    to make a type specimen book.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="slider__item">
-                                        <div class="new-card">
-                                            <div class="new-card__img">
-                                                <a href="/">
-                                                    <img src="assets/img/news/new-dummy.png" alt="Some new image">
+                                        <div class="slider__item">
+                                            <div class="new-card">
+                                                <div class="new-card__img">
+                                                    <a href="/">
+                                                        <img src="assets/img/news/effect.jpeg" alt="Effect">
+                                                    </a>
+                                                </div>
+                                                <a class="new-card__title" href="/">
+                                                    Here should be new title but not very long
                                                 </a>
-                                            </div>
-                                            <a class="new-card__title" href="/">
-                                                Here should be new title but not very long
-                                            </a>
-                                            <div class="new-card__desc">
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                                when an unknown printer took a galley of type and scrambled it
-                                                to make a type specimen book.
+                                                <div class="new-card__desc">
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it
+                                                    to make a type specimen book.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="slider__item">
-                                        <div class="new-card">
-                                            <div class="new-card__img">
-                                                <a href="/">
-                                                    <img src="assets/img/news/new-dummy.png" alt="Some new image">
+                                        <div class="slider__item">
+                                            <div class="new-card">
+                                                <div class="new-card__img">
+                                                    <a href="/">
+                                                        <img src="assets/img/news/remni.jpeg" alt="Remni">
+                                                    </a>
+                                                </div>
+                                                <a class="new-card__title" href="/">
+                                                    Here should be new title but not very long
                                                 </a>
-                                            </div>
-                                            <a class="new-card__title" href="/">
-                                                Here should be new title but not very long
-                                            </a>
-                                            <div class="new-card__desc">
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                                when an unknown printer took a galley of type and scrambled it
-                                                to make a type specimen book.
+                                                <div class="new-card__desc">
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it
+                                                    to make a type specimen book.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="slider__item">
-                                        <div class="new-card">
-                                            <div class="new-card__img">
-                                                <a href="/">
-                                                    <img src="assets/img/news/new-dummy.png" alt="Some new image">
+                                        <div class="slider__item">
+                                            <div class="new-card">
+                                                <div class="new-card__img">
+                                                    <a href="/">
+                                                        <img src="assets/img/news/keys.jpg" alt="Keys">
+                                                    </a>
+                                                </div>
+                                                <a class="new-card__title" href="/">
+                                                    Here should be new title but not very long
                                                 </a>
+                                                <div class="new-card__desc">
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it
+                                                    to make a type specimen book.
+                                                </div>
                                             </div>
-                                            <a class="new-card__title" href="/">
-                                                Here should be new title but not very long
-                                            </a>
-                                            <div class="new-card__desc">
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                                when an unknown printer took a galley of type and scrambled it
-                                                to make a type specimen book.
+                                        </div>
+                                        <div class="slider__item">
+                                            <div class="new-card">
+                                                <div class="new-card__img">
+                                                    <a href="/">
+                                                        <img src="assets/img/news/dj.jpg" alt="DJ">
+                                                    </a>
+                                                </div>
+                                                <a class="new-card__title" href="/">
+                                                    Here should be new title but not very long
+                                                </a>
+                                                <div class="new-card__desc">
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it
+                                                    to make a type specimen book.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item">
+                                            <div class="new-card">
+                                                <div class="new-card__img">
+                                                    <a href="/">
+                                                        <img src="assets/img/news/studio.jpeg" alt="Studio">
+                                                    </a>
+                                                </div>
+                                                <a class="new-card__title" href="/">
+                                                    Here should be new title but not very long
+                                                </a>
+                                                <div class="new-card__desc">
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it
+                                                    to make a type specimen book.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item">
+                                            <div class="new-card">
+                                                <div class="new-card__img">
+                                                    <a href="/">
+                                                        <img src="assets/img/news/headphones.jpeg" alt="Headphones">
+                                                    </a>
+                                                </div>
+                                                <a class="new-card__title" href="/">
+                                                    Here should be new title but not very long
+                                                </a>
+                                                <div class="new-card__desc">
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it
+                                                    to make a type specimen book.
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
