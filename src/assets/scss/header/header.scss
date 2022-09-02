@@ -1,5 +1,5 @@
 @import "../vars.scss";
-
+@import "./main-menu.scss";
 @import "./search.scss";
 @import "./phone-list.scss";
 @import "./icon-text.scss";
@@ -45,6 +45,14 @@
 
     &__tools {
         padding-left: 15px;
+    }
+
+    &__menu {
+        z-index: 10;
+        position: absolute;
+        width: 300px;
+        left: 50px;
+        top: 150px;
     }
 
 }

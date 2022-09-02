@@ -1,0 +1,18 @@
+.main-menu {
+	background-color: $backgroundColor;
+	border-radius: 10px;
+	box-shadow: 3px 1px 7px rgb(0 0 0 / 20%);
+	padding: 10px 20px;
+	font-weight: 400;
+	line-height: 35px;
+	letter-spacing: .6px;
+
+	&__link {
+		color: $textColorDark;
+		transition: color .1s ease;
+	}
+
+	&__link:hover {
+		color: $secondaryColorActive;
+	}
+}
