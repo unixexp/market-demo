@@ -2,6 +2,7 @@
 
 import "./assets/scss/styles.scss";
 import "./assets/scss/header/header.scss";
+import "./assets/scss/main/main.scss";
 import "./assets/scss/footer/footer.scss";
 import "./components/slider/slider.scss";
 import "./assets/scss/media.scss"
