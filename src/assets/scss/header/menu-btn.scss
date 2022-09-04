@@ -1,0 +1,15 @@
+.menu-btn {
+    width: 100px;
+    height: 42px;
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: $secondaryColor;
+    cursor: pointer;
+    color: $textColorBright;
+    transition: background-color .2s ease;
+    // TODO: set "display: none" after complete development
+
+    &:hover {
+        background-color: $secondaryColorActive;
+    }
+}

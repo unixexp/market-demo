@@ -66,8 +66,25 @@
 			align-items: center;
 		}
 
+		&__search {
+			display: flex;
+			padding-left: 0;
+		}
+
 		&__left-block div:not(:last-child) {
 			padding-bottom: 15px;
+		}
+	}
+
+	.search {
+		width: 100%;
+	}
+
+	.menu-btn {
+		display: block;
+
+		&--header {
+			margin-right: 10px;
 		}
 	}
 
