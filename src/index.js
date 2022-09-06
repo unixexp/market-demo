@@ -9,6 +9,7 @@ import "./assets/scss/media.scss"
 
 import Slider from "./components/slider/slider.js";
 
+// Slider block
 const newsSlider = new Slider("news-slider");
 
 const newsSliderSlideLeftButton = document.querySelector(".news-arrow-left");
@@ -40,4 +41,20 @@ function watchSliderState(state) {
 }
 
 newsSlider.setCallback(watchSliderState);
+
+// MainMenu block
+const mainMenuButton = document.querySelector(".menu-btn");
+mainMenuButton.addEventListener("click", () => {
+	const mainMenu = document.querySelector(".menu");
+	const minimized = mainMenu.classList.contains("menu--minimized");
+	if (!minimized) {
+		mainMenu.classList.add("menu--minimized");
+		setTimeout(() => mainMenu.classList.add("menu--hidden"), 300);
+	} else {
+		mainMenu.classList.remove("menu--minimized");
+		setTimeout(() => mainMenu.classList.remove("menu--hidden"), 50);
+	}
+});
+
+
 

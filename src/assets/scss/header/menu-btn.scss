@@ -7,7 +7,7 @@
     cursor: pointer;
     color: $textColorBright;
     transition: background-color .2s ease;
-    // TODO: set "display: none" after complete development
+    display: none;
 
     &:hover {
         background-color: $secondaryColorActive;
