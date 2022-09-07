@@ -5,7 +5,9 @@ import "./assets/scss/header/header.scss";
 import "./assets/scss/main/main.scss";
 import "./assets/scss/footer/footer.scss";
 import "./components/slider/slider.scss";
-import "./assets/scss/media.scss"
+import "./assets/scss/media.scss";
+
+import { MEDIA_MAX_WIDTH_688, MEDIA_MAX_WIDTH_996 } from "./media.js";
 
 import Slider from "./components/slider/slider.js";
 
@@ -44,7 +46,7 @@ newsSlider.setCallback(watchSliderState);
 
 // MainMenu block
 const mainMenuButton = document.querySelector(".menu-btn");
-mainMenuButton.addEventListener("click", () => {
+const displayMenu = () => {
 	const mainMenu = document.querySelector(".menu");
 	const minimized = mainMenu.classList.contains("menu--minimized");
 	if (!minimized) {
@@ -54,7 +56,16 @@ mainMenuButton.addEventListener("click", () => {
 		mainMenu.classList.remove("menu--minimized");
 		setTimeout(() => mainMenu.classList.remove("menu--hidden"), 50);
 	}
-});
+};
+mainMenuButton.addEventListener("click", displayMenu);
 
+if (MEDIA_MAX_WIDTH_688) {
+	displayMenu();
 
+	const headerRightBlock = document.querySelector(".header__right-block");
+	const headerPhones = headerRightBlock.querySelector(".header__phones");
+	headerRightBlock.insertBefore(mainMenuButton, headerPhones);
+} else if (MEDIA_MAX_WIDTH_996) {
+	displayMenu();
+}
 
