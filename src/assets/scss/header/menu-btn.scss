@@ -7,7 +7,6 @@
     cursor: pointer;
     color: $textColorBright;
     transition: background-color .2s ease;
-    display: none;
 
     &:hover {
         background-color: $secondaryColorActive;
