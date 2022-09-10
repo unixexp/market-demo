@@ -88,15 +88,31 @@
 @media (max-width: 688px) {
 	.tools {
 		flex-direction: row;
+		margin-bottom: 0;
 
 		.icon-text__text {
+			display: none;
+		}
+
+		&__account {
+			display: none;
+		}
+
+		&__lang {
+			display: none;
+		}
+
+		&__favorites {
 			display: none;
 		}
 	}
 
 	.header {
+		&__logo {
+			display: none;
+		}
+
 		&__content {
-			flex-direction: column;
 			align-items: center;
 		}
 
@@ -105,21 +121,16 @@
 			padding-left: 0;
 		}
 
-		&__left-block {
-			padding-bottom: 15px;
-		}
-
 		&__right-block {
 			align-items: flex-start;
 		}
 
 		&__phones {
-			padding-left: 0;
-			margin-top: 9px;
+			display: none;
 		}
 
 		&__tools {
-			margin-top: 9px;
+			padding-left: 10px;
 		}
 	}
 

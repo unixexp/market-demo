@@ -62,14 +62,21 @@ window.addEventListener("load", () => {
 	if (window.matchMedia('(max-width: 996px)').matches) {
 		mainMenu.classList.add("menu--minimized");
 		mainMenu.classList.add("menu--hidden");
+	} else if (window.matchMedia('(min-width: 997px)').matches) {
+		mainMenu.classList.remove("menu--minimized");
+		mainMenu.classList.remove("menu--hidden");
 	}
 });
 
+/*
 window.addEventListener("resize", () => {
 	if (window.matchMedia('(max-width: 996px)').matches) {
 		mainMenu.classList.add("menu--minimized");
 		setTimeout(() => mainMenu.classList.add("menu--hidden"), 300);
+	} else if (window.matchMedia('(min-width: 997px)').matches) {
+		mainMenu.classList.remove("menu--hidden");
+		mainMenu.classList.remove("menu--minimized");
 	}
 });
-
+*/
 
