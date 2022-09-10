@@ -85,68 +85,7 @@
 	}
 }
 
-@media (max-height: 400px) {
-	.tools {
-		flex-direction: row;
-		
-
-		.icon-text__text {
-			display: none;
-		}
-
-		&__account {
-			display: none;
-		}
-
-		&__lang {
-			display: none;
-		}
-
-		&__favorites {
-			display: none;
-		}
-	}
-
-	.header {
-		&__logo {
-			display: none;
-		}
-
-		&__content {
-			align-items: center;
-		}
-
-		&__search {
-			min-width: 300px;
-			padding-left: 0;
-		}
-
-		&__right-block {
-			align-items: flex-start;
-		}
-
-		&__phones {
-			display: none;
-		}
-
-		&__tools {
-			padding-left: 10px;
-		}
-	}
-
-	.phone-list {
-		&__img-wrapper {
-			padding-right: 0;
-			height: 24px;
-		}
-
-		&__img {
-			height: 24px;
-		}
-	}
-}
-
-@media (max-width: 688px) {
+@media (max-width: 688px) or (max-height: 540px) {
 	.tools {
 		flex-direction: row;
 		
