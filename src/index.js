@@ -5,6 +5,7 @@ import "./assets/scss/header/header.scss";
 import "./assets/scss/main/main.scss";
 import "./assets/scss/footer/footer.scss";
 import "./components/slider/slider.scss";
+import "./assets/scss/media.scss";
 
 import Slider from "./components/slider/slider.js";
 
@@ -65,7 +66,7 @@ window.addEventListener("load", () => {
 });
 
 window.addEventListener("resize", () => {
-	if (window.matchMedia('(max-width: 966px)').matches) {
+	if (window.matchMedia('(max-width: 996px)').matches) {
 		mainMenu.classList.add("menu--minimized");
 		setTimeout(() => mainMenu.classList.add("menu--hidden"), 300);
 	}
