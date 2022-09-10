@@ -70,3 +70,5 @@ window.addEventListener("resize", () => {
 		setTimeout(() => mainMenu.classList.add("menu--hidden"), 300);
 	}
 });
+
+
