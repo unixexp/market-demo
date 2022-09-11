@@ -52,13 +52,6 @@
 
 }
 
-@media (max-width: 1080px) {
-	.tools {
-	    display: flex;
-	    flex-direction: column;
-	}
-}
-
 @media (max-width: 996px) {
 	.header {
 		&__left-block {
@@ -81,14 +74,15 @@
 	}
 
 	.container {
-		max-width: 692px;
+		max-width: 996px;
 	}
 }
 
 @media (max-width: 688px) or (max-height: 540px) {
 	.tools {
 		flex-direction: row;
-		margin-bottom: 0;
+		margin-top: 8px;
+		gap: 0;
 
 		.icon-text__text {
 			display: none;
@@ -143,6 +137,26 @@
 		&__img {
 			height: 24px;
 		}
+	}
+
+	.menu {
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		overflow: auto;
+
+		&__submenu {
+			position: relative;
+			left: 0;
+			top: 0;
+			width: 100%;
+			border-radius: 0;
+			box-shadow: none;
+		}
+
+
 	}
 }
 
